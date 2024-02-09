@@ -1,0 +1,86 @@
+<div class="layout register">
+  <h1 class="app-title">RT Chat</h1>
+
+  <div class="register__content">
+    <form action="javascript:void(0)" class="form form--register">
+      <h2 class="form__title">Register</h2>
+
+      <div class="form__control">
+        <input
+          type="text"
+          placeholder="New username"
+          class="form__input"
+          name="username"
+          id="username"
+        />
+        <fa-icon [icon]="faUser" size="lg" class="form__icon"></fa-icon>
+      </div>
+
+      <div class="form__control">
+        <input
+          type="password"
+          placeholder="New password"
+          class="form__input"
+          name="password"
+          id="password"
+        />
+        <fa-icon [icon]="faKey" size="lg" class="form__icon"></fa-icon>
+      </div>
+
+      <div class="form__control">
+        <input
+          type="password"
+          placeholder="Repeat password"
+          class="form__input"
+          name="repeatPassword"
+          id="repeatPassword"
+        />
+        <fa-icon [icon]="faKey" size="lg" class="form__icon"></fa-icon>
+      </div>
+
+      <div class="form__control">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">
+            <fa-icon
+              [icon]="faPalette"
+              size="sm"
+              class="form__legend__icon"
+            ></fa-icon>
+            <span class="form__legend__title"
+              >Chat color: {{ chatColor.name }}</span
+            >
+          </legend>
+
+          <div class="form__radio__list">
+            @for (color of chatColors; track $index) {
+            <div
+              class="form__radio__item"
+              style="--chat-color: {{ color.value }}"
+            >
+              <input
+                type="radio"
+                name="color"
+                id="color{{ $index }}"
+                [value]="color"
+                [(ngModel)]="chatColor"
+                class="form__radio"
+              />
+              <label for="color{{ $index }}" class="form__radio__label">
+                <span class="form__radio__color"></span>
+              </label>
+            </div>
+            }
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="form__control form__control--button">
+        <button class="form__button">Register now!</button>
+
+        <a class="form__link" [routerLink]="['/']"
+          >Do you have an account? Sign in!</a
+        >
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+  padding: 3rem 0;
+}
+
+.form {
+  border: 1px solid var(--color-cinereous);
+  border-radius: 1rem;
+}

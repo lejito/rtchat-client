@@ -1,0 +1,89 @@
+<div class="layout">
+  <main class="chat">
+    <h1 class="app-title">RT Chat</h1>
+
+    <ul class="chat__list">
+      <li class="chat__item" style="--chat-color: {{ setRandomChatColor().value }}">
+        <h4 class="chat__username">JuanK</h4>
+        <p class="chat__message">
+          Hi! I'm looking for friends. Who wants to be my friend?
+        </p>
+        <span class="chat__time">17:12</span>
+      </li>
+
+      <li class="chat__item" style="--chat-color: {{ setRandomChatColor().value }}">
+        <h4 class="chat__username">Chris</h4>
+        <p class="chat__message">
+          Hey Juank! I'm also looking for that. Let's be friends!
+        </p>
+        <span class="chat__time">17:14</span>
+      </li>
+
+      <li class="chat__item" style="--chat-color: {{ setRandomChatColor().value }}">
+        <h4 class="chat__username">Marie</h4>
+        <p class="chat__message">I love cats! Who else loves cats?</p>
+        <span class="chat__time">17:18</span>
+      </li>
+
+      <li class="chat__item" style="--chat-color: {{ setRandomChatColor().value }}">
+        <h4 class="chat__username">Larry</h4>
+        <p class="chat__message">
+          I hate cats! They're boring... I prefer dogs.
+        </p>
+        <span class="chat__time">17:18</span>
+      </li>
+
+      <li class="chat__item" style="--chat-color: {{ setRandomChatColor().value }}">
+        <h4 class="chat__username">Marie</h4>
+        <p class="chat__message">
+          I also love dogs! I have a golden retriever. Lorem ipsum dolor sit,
+          amet consectetur adipisicing elit. Dolores quos similique illo
+          reiciendis, earum consequuntur, hic qui quis perferendis beatae
+          eveniet. Hic maiores accusamus quas nihil rem voluptates tempore
+          voluptatum!
+        </p>
+        <span class="chat__time">17:20</span>
+      </li>
+
+      <li class="chat__item" style="--chat-color: {{ setRandomChatColor().value }}">
+        <h4 class="chat__username">Larry</h4>
+        <p class="chat__message">I have a German shepherd. They're the best!</p>
+        <span class="chat__time">17:21</span>
+      </li>
+
+      <li class="chat__item" style="--chat-color: {{ setRandomChatColor().value }}">
+        <h4 class="chat__username">Chris</h4>
+        <p class="chat__message">
+          I have a cat and a dog. They're both amazing!
+        </p>
+        <span class="chat__time">17:22</span>
+      </li>
+
+      <li class="chat__item" style="--chat-color: {{ setRandomChatColor().value }}">
+        <h4 class="chat__username">Marie</h4>
+        <p class="chat__message">
+          I'm so happy to have found this chat. I love animals!
+        </p>
+        <span class="chat__time">17:23</span>
+      </li>
+    </ul>
+
+    <div class="chat__box">
+      <form action="javascript:void(0)" class="chat__form">
+        <input
+          type="text"
+          class="chat__input"
+          placeholder="Type a message..."
+        />
+        <button class="chat__button">
+          <fa-icon
+            [icon]="faPaperPlane"
+            size="lg"
+            class="chat__button_icon"
+          ></fa-icon>
+          <span class="chat__button_text">Send</span>
+        </button>
+      </form>
+    </div>
+  </main>
+</div>

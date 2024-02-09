@@ -1,0 +1,33 @@
+/* RESET STYLES */
+
+* {
+  font-family: inherit;
+  box-sizing: border-box;
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  vertical-align: baseline;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  text-decoration: none;
+}
+
+input, select {
+  outline: none;
+
+}

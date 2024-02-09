@@ -1,0 +1,14 @@
+/* GENERAL VARIABLES */
+
+:root {
+  /* Colors */
+  --color-raisin-black: #1E212B;
+  --color-cinereous: hsl(17, 11%, 46%);
+  --color-picton-blue: #4EA5D9;
+  --color-hunyadi-yellow: #EDAE49;
+  --color-lavender-blush: #F7EDF0;
+  
+  /* Fonts */
+  --font-family: Ubuntu, Montserrat, sans-serif;
+  --font-size-base: 16px;
+}
