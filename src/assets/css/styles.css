@@ -2,10 +2,6 @@
 @import "reset.css";
 @import "variables.css";
 
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
 /* GLOBAL */
 :root {
   font-size: 16px;
@@ -22,7 +18,7 @@ body {
 .layout {
   width: 100%;
   height: auto;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .app-title {
